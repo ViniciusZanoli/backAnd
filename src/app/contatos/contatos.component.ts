@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PerfilService } from '../perfil.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-contatos',
@@ -9,7 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class ContatosComponent implements OnInit {
 
-  contatos: Array<any> = new Array();
+
+  listaDeContatos: Array<any>;
 
   constructor(private perfilService: PerfilService) { }
 
@@ -18,7 +18,7 @@ export class ContatosComponent implements OnInit {
   }
 
   listar() {
-    this.perfilService.listar().subscribe(dados => this.contatos = dados)
+    this.perfilService.listar().subscribe(dados => this.listaDeContatos = dados)
   }
 
 }
