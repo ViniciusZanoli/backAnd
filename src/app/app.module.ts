@@ -6,12 +6,14 @@ import { ContatosComponent } from './contatos/contatos.component';
 import { PerfilService } from './perfil.service';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContatosComponent
+    ContatosComponent,
+    LoginComponent
   ],
   imports:
   [  
