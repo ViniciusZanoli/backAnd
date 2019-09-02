@@ -13,9 +13,9 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
-  enviaLogin(user){
-    let body = JSON.stringify(user);
-    return this.http.post('/server/rest/login', body, httpOptions);
-  }
+  // enviaLogin(user){
+  //   let body = JSON.stringify(user);
+  //   return this.http.post('/server/rest/login', body, httpOptions);
+  // }
 
 }
